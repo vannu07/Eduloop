@@ -12,5 +12,25 @@ jobs:
     - uses: actions/first-interaction@v1.3.0
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: "Message that will be displayed on users' first issue"
-        pr-message: "Message that will be displayed on users' first pull request"
+        issue-message: |
+          👋 Thanks for opening your first issue in this repository!
+          
+          We really appreciate you taking the time to contribute. Someone from the maintainer team will review this soon.
+          
+          In the meantime, please double-check that your issue includes:
+          - A clear description of the problem or request
+          - Steps to reproduce (if applicable)
+          - Relevant logs, screenshots, or examples
+          
+          You can also review our contribution guidelines here: CONTRIBUTING.md
+        pr-message: |
+          🎉 Thank you for submitting your first pull request!
+          
+          We’re excited to see your contribution. A maintainer will review your changes as soon as possible.
+          
+          While you wait, please make sure that:
+          - All checks are passing
+          - The PR description clearly explains the changes and motivation
+          - Any relevant documentation or tests have been updated
+          
+          For more information about our workflow and expectations, please see: CONTRIBUTING.md
